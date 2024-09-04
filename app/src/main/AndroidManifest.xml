@@ -21,6 +21,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- stackk -->
+        <activity
+            android:name=".StackKActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StackKProcessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StackKCbActivity"
+            android:exported="true">
+        </activity> <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+
     </application>
 
 </manifest>

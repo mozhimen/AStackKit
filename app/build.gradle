@@ -30,9 +30,17 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures{
+        dataBinding true
+    }
 }
 
 dependencies {
+    implementation project(':SwiftKit:mvvmk')
+    implementation project(':SwiftKit:xmlk')
+    implementation project(':stackk_callback')
+    implementation project(':stackk')
+    implementation project(':stackk_process')
     //////////////////////////////////////////////////////////////////
     //test
     testImplementation 'junit:junit:4.13.2'

@@ -1,15 +1,11 @@
 package com.mozhimen.stackk.test
 
-import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import com.mozhimen.kotlin.utilk.android.content.startContext
+import com.mozhimen.mvvmk.bases.activity.databinding.BaseActivityVDB
+import com.mozhimen.stackk.test.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+class MainActivity : BaseActivityVDB<ActivityMainBinding>() {
 
     fun goStackK(view: View) {
         startContext<StackKActivity>()

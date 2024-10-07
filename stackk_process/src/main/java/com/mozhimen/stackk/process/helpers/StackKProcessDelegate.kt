@@ -7,6 +7,7 @@ import com.mozhimen.basick.bases.BaseWakeBefDestroyLifecycleObserver
 import com.mozhimen.kotlin.lintk.optins.OApiInit_ByLazy
 import com.mozhimen.kotlin.lintk.optins.OApiCall_BindLifecycle
 import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.OApiUse_BaseApplication
 import com.mozhimen.stackk.basic.commons.IStackK
 import com.mozhimen.stackk.basic.commons.IStackKListener
 import com.mozhimen.stackk.callback.StackKCb
@@ -19,6 +20,7 @@ import java.lang.ref.WeakReference
  * @Date 2023/6/11 14:34
  * @Version 1.0
  */
+@OApiUse_BaseApplication
 @OApiInit_InApplication
 internal class StackKProcessDelegate : IStackK {
     @OptIn(OApiInit_ByLazy::class, OApiCall_BindLifecycle::class)

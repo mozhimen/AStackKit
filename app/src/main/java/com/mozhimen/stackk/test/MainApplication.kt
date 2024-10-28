@@ -2,6 +2,7 @@ package com.mozhimen.stackk.test
 
 import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
 import com.mozhimen.kotlin.lintk.optins.OApiMultiDex_InApplication
+import com.mozhimen.kotlin.lintk.optins.OApiUse_BaseApplication
 import com.mozhimen.stackk.bases.BaseApplication
 import com.mozhimen.stackk.process.StackKProcess
 
@@ -14,7 +15,7 @@ import com.mozhimen.stackk.process.StackKProcess
  */
 @OptIn(OApiMultiDex_InApplication::class)
 class MainApplication : BaseApplication() {
-    @OptIn(OApiInit_InApplication::class)
+    @OptIn(OApiInit_InApplication::class, OApiUse_BaseApplication::class)
     override fun onCreate() {
         super.onCreate()
 

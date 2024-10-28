@@ -31,7 +31,7 @@ android {
 }
 
 dependencies {
-    api project(project.path.replace(project.name,'')+':basic')
+    api project(project.path.replace(project.name,'')+':stackk_basic')
 
     implementation project(':KUtilKit:utilk_android')
     testImplementation 'junit:junit:4.13.2'

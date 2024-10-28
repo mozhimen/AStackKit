@@ -23,7 +23,7 @@ rootProject.name = "AStackKit"
 include ':app'
 include ':stackk'
 include ':stackk_callback'
-include ':basic'
+include ':stackk_basic'
 include ':stackk_monitor'
 include ':stackk_process'
 //KUtilKit

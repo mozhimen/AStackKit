@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.mozhimen.stackk.process'
+    namespace 'com.mozhimen.stackk.callback'
     compileSdk 34
 
     defaultConfig {
@@ -12,13 +12,13 @@ android {
         multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+//        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
     compileOptions {
@@ -31,13 +31,9 @@ android {
 }
 
 dependencies {
-    if (rootProject.name == "SwiftKit") {
-        implementation project(':basick')
-    } else {
-        implementation project(':SwiftKit:basick')
-    }
-    implementation project(project.path.replace(project.name,'')+':stackk_callback')
-    
+    api project(project.path.replace(project.name,'')+':basic')
+    implementation project(':KUtilKit:android')
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'

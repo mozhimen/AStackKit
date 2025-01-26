@@ -12,5 +12,6 @@ object CStackKCons {
     object Event {
         const val STACKK_FIRST_ACTIVITY = "stackk_first_activity"
     }
+
     const val EVENT_STACKK_FIRST_ACTIVITY = "event_stackk_first_activity"
 }

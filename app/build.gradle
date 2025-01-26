@@ -36,11 +36,11 @@ android {
 }
 
 dependencies {
-    implementation project(':SwiftKit:bindk')
-    implementation project(':SwiftKit:xmlk')
-    implementation project(':stackk_callback')
+    implementation project(':ASwiftKit:bindk')
+    implementation project(':ASwiftKit:xmlk')
+    implementation project(':callback')
     implementation project(':stackk')
-    implementation project(':stackk_process')
+    implementation project(':process')
 
     //////////////////////////////////////////////////////////////////
     //test

@@ -3,7 +3,7 @@ package com.mozhimen.stackk.test
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
-import com.mozhimen.bindk.bases.viewdatabinding.activity.BaseActivityVDB
+import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
 import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
 import com.mozhimen.stackk.callback.StackKCb

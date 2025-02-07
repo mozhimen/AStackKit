@@ -14,7 +14,7 @@ import com.mozhimen.stackk.callback.StackKCb
 import java.lang.ref.WeakReference
 
 /**
- * @ClassName StackKProcessProxy
+ * @ClassName StackKProcessDelegate
  * @Description TODO
  * @Author Mozhimen / Kolin Zhao
  * @Date 2023/6/11 14:34

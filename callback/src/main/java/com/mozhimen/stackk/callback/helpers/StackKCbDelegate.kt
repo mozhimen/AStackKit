@@ -21,7 +21,7 @@ import java.lang.ref.WeakReference
 import java.util.LinkedList
 
 /**
- * @ClassName StackKCbProxy
+ * @ClassName StackKCbDelegate
  * @Description TODO
  * @Author Mozhimen / Kolin Zhao
  * @Date 2023/6/11 2:04

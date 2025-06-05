@@ -32,9 +32,9 @@ android {
 
 dependencies {
     if (rootProject.name == "ASwiftKit") {
-        implementation project(':basick')
+        api project(':basick')
     } else {
-        implementation project(':ASwiftKit:basick')
+        api project(':ASwiftKit:basick')
     }
     api project(project.path.replace(project.name,'')+':callback')
 

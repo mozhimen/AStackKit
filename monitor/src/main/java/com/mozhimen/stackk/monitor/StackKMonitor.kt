@@ -14,7 +14,7 @@ import kotlin.system.exitProcess
  * @Date 2023/8/18 11:34
  * @Version 1.0
  */
-class StackMonitor {
+class StackKMonitor {
     companion object {
         @JvmStatic
         val instance = INSTANCE.holder
@@ -107,6 +107,6 @@ class StackMonitor {
     ////////////////////////////////////////////////////////////////////////////
 
     private object INSTANCE {
-        val holder = StackMonitor()
+        val holder = StackKMonitor()
     }
 }

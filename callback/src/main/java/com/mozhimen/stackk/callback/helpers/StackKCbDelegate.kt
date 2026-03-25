@@ -11,7 +11,8 @@ import com.mozhimen.kotlin.utilk.android.app.UtilKActivityWrapper
 import com.mozhimen.kotlin.utilk.android.app.UtilKApplicationWrapper
 import com.mozhimen.kotlin.utilk.android.app.isFinishingOrDestroyed
 import com.mozhimen.kotlin.utilk.android.os.UtilKBuildVersion
-import com.mozhimen.kotlin.utilk.kotlin.collections.ifNotEmpty
+
+import com.mozhimen.kotlin.utilk.kotlin.collections.ifNotNullOrEmptyOr
 import com.mozhimen.kotlin.utilk.kotlin.collections.removeBy
 import com.mozhimen.kotlin.utilk.kotlin.t2weakRef
 import com.mozhimen.stackk.basic.cons.SLifecycleCallbackEvent
@@ -148,7 +149,7 @@ internal class StackKCbDelegate : IStackK, IStackKLifecycle {
     }
 
     private fun onLifecycleChanged(activity: Activity, event: SLifecycleCallbackEvent, @ALifecycleOpportunity opportunity: Int) {
-        _stackKActivityLifecycleCallbacks.ifNotEmpty { callbacks ->
+        _stackKActivityLifecycleCallbacks.ifNotNullOrEmptyOr( { callbacks ->
             callbacks.forEach { callback ->
                 if (opportunity == ALifecycleOpportunity.AT) {
                     StackKUtil.onLifecycleChangedAt(activity, event, callback)
@@ -158,7 +159,7 @@ internal class StackKCbDelegate : IStackK, IStackKLifecycle {
                     StackKUtil.onLifecycleChangedPost(activity, event, callback)
                 }
             }
-        }
+        })
     }
 
     //////////////////////////////////////////////////////////////////////////////////////////////

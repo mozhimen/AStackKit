@@ -1,7 +1,7 @@
 package com.mozhimen.stackk.process
 
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
-import com.mozhimen.kotlin.lintk.optins.OApiUse_BaseApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiUse_BaseApplication
 import com.mozhimen.stackk.basic.commons.IStackK
 import com.mozhimen.stackk.process.helpers.StackKProcessDelegate
 

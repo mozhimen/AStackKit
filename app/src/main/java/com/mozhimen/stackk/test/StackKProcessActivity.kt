@@ -5,8 +5,8 @@ import android.app.Activity
 import android.os.Bundle
 import com.mozhimen.uik.databinding.bases.viewdatabinding.activity.BaseActivityVDB
 import com.mozhimen.kotlin.utilk.android.util.UtilKLogWrapper
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
-import com.mozhimen.kotlin.lintk.optins.OApiUse_BaseApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiUse_BaseApplication
 import com.mozhimen.kotlin.utilk.android.widget.showToast
 import com.mozhimen.stackk.basic.commons.IStackKListener
 import com.mozhimen.stackk.process.StackKProcess

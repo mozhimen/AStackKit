@@ -1,8 +1,8 @@
 package com.mozhimen.stackk.test
 
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
-import com.mozhimen.kotlin.lintk.optins.OApiMultiDex_InApplication
-import com.mozhimen.kotlin.lintk.optins.OApiUse_BaseApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiMultiDex_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiUse_BaseApplication
 import com.mozhimen.stackk.bases.BaseApplication
 import com.mozhimen.stackk.process.StackKProcess
 

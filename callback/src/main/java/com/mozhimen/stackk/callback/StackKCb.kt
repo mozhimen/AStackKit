@@ -1,7 +1,7 @@
 package com.mozhimen.stackk.callback
 
 
-import com.mozhimen.kotlin.lintk.optins.OApiInit_InApplication
+import com.mozhimen.kotlin.lintk.optins.api.OApiInit_InApplication
 import com.mozhimen.stackk.callback.helpers.StackKCbDelegate
 import com.mozhimen.stackk.basic.commons.IStackK
 import com.mozhimen.stackk.callback.commons.IStackKLifecycle

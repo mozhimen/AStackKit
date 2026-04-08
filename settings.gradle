@@ -1,6 +1,8 @@
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        google()
+        mavenCentral()
         mavenLocal()
         maven { url 'https://maven.aliyun.com/repository/central' }
         maven { url 'https://maven.aliyun.com/repository/google' }
@@ -14,8 +16,6 @@ dependencyResolutionManagement {
         maven { url 'https://developer.huawei.com/repo/' }
         maven { url "https://jitpack.io" }
         maven { url 'https://www.jitpack.io' }
-        mavenCentral()
-        google()
     }
 }
 
@@ -26,29 +26,3 @@ include ':callback'
 include ':basic'
 include ':monitor'
 include ':process'
-//ALibKit_Google
-include ":ALibKit_Google"
-project(':ALibKit_Google').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Google")
-include ':ALibKit_Google:material'
-//ALibKit_Jetpack
-include ":ALibKit_Jetpack"
-project(':ALibKit_Jetpack').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetpack")
-include ':ALibKit_Jetpack:databinding'
-include ':ALibKit_Jetpack:core'
-include ':ALibKit_Jetpack:annotation'
-//ALibKit_Jetbrains
-include ":ALibKit_Jetbrains"
-project(':ALibKit_Jetbrains').projectDir = new File("D:\\WorkSpace\\GitHub\\ALibKit_Jetbrains")
-include ':ALibKit_Jetbrains:kotlin_stdlib'
-include ':ALibKit_Jetbrains:kotlinx_coroutines'
-//KUtilKit
-include ":KUtilKit"
-project(':KUtilKit').projectDir = new File("D:\\WorkSpace\\GitHub\\KUtilKit")
-include ':KUtilKit:android'
-include ':KUtilKit:kotlin'
-//ASwiftKit
-include ":ASwiftKit"
-project(':ASwiftKit').projectDir = new File("D:\\WorkSpace\\GitHub\\ASwiftKit")
-include ':ASwiftKit:basick'
-include ':ASwiftKit:uik:databinding'
-include ':ASwiftKit:xmlk'

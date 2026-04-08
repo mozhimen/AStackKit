@@ -31,11 +31,7 @@ android {
 }
 
 dependencies {
-    if (rootProject.name == "ASwiftKit") {
-        api project(':basick')
-    } else {
-        api project(':ASwiftKit:basick')
-    }
+    api 'com.github.mozhimen.ASwiftKit:basick:2.0.3'
     api project(project.path.replace(project.name,'')+':callback')
 
     testImplementation 'junit:junit:4.13.2'
